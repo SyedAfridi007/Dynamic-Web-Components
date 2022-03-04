@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height:100vh;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title{
+  margin-bottom: 2rem;
+  color: crimson;
+}
+
+.card{
+  width: 70%;
+  height: 65%;
+  background-color:white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.card .card-body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin: 0 .2rem 0 .2rem;
+}
+.input input::placeholder{
+  color: crimson;
+}
+.input input:focus{
+  outline: none;
+}
+
+
+.input input{
+  padding: .6rem;
+  border: 2px solid crimson;
+  background-color: transparent;
+  border-radius: 5px;  
+}
+
+.container input[type=submit]{
+    margin-top: 1rem;
+    border: none;
+    background-color: crimson;
+    padding: .5rem 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.details{
+  transform: scale(0);
+  transition: .5s;
+}
+
+.popup.active{
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100vh;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+
+}
+
+.popup .details.active{
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 500px; 
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 37%;
+  top: 30%;
+  transition: .5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+  transform: scale(1);
+
+}
+.details h2{
+  color: crimson;
+  margin-bottom: 1.5rem;
+
+}
+.details p{
+  color: black;
+  font-size: 1.2rem;
+  margin:.5rem 0 ;
+
+}
+.details .home-btn{
+  outline: none;
+  border: none;
+  padding: .8rem 1.2rem;
+  border-radius: 2px;
+  margin-top: 1rem;
+  background-color: crimson;
+  color: white;
+}
+.details .cls-btn{
+  outline: none;
+  border: none;
+  padding: .8rem 1.2rem;
+  border-radius: 2px;
+  margin-top: 1rem;
+  background-color: crimson;
+  color: white;
+}
+
+
+ @-webkit-keyframes animatezoom{
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+
