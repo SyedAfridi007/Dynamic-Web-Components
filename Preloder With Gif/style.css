@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar{
+      width: 10px;
+  }
+
+  ::-webkit-scrollbar-track{
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+      background-color: chocolate;
+      border-radius: 10px;
+  }
+/*-----------------------------preloder-------------------*/
+#preloader{
+    background:white;
+    background-image:url(img/preloder.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+/*-----------------------------Slide-Top-Btn-------------------*/
+
+.slide-top-btn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background:chocolate;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    z-index: 3;
+    transition: 0.4s;
+  }
+  .slide-top-btn:hover{
+
+    background: rgb(204, 85, 0);
+  }
+/*-----------------------------Header-------------------*/
+.header-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 4;
+}
+
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 8%; 
+    margin-right: 8%; 
+    padding: 20px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navigation .fa{
+
+    display: none;
+}
+
+.logo h1{
+
+    color: #FCFCFC;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+.logo span{
+
+    color: chocolate;
+}
+
+
+.nav-links ul{
+
+    list-style: none;
+    color:#FCFCFC;
+}
+
+.nav-links ul li{
+
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 18px;
+   
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li a::after{
+    content: '';
+    height: 3px;
+    width:0%;
+    background-color: chocolate;
+    display: block;
+    top:0;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover{
+   color: chocolate;
+}
+.nav-links ul li:hover a::after{ 
+    width: 100%;
+}
+
+.header-row-2{
+
+    margin: 12% 10%;  
+}
+
+.header-row-2 h3{
+
+    color: #FCFCFC;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.header-row-2 h3{
+
+    color: #FCFCFC;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.header-row-2 h1{
+
+    color: #FCFCFC;
+    font-size: 110px;
+    font-weight: 500;
+}
+
+
+.header-row-2 h2{
+
+    color: #FCFCFC;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px ;
+}
+
+.header-row-2 h2 span{
+
+    color: chocolate;
+}
+
+.header-row-2 a{
+
+    color: #FCFCFC;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    background:transparent;
+    border: 1px solid chocolate;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    margin-top: 30px;
+    transition: 0.5s;
+
+}
+
+.header-row-2 a:hover{
+
+    background-color: chocolate;
+}
+
+/*-------------------------------------------------Resposive--------------------------------------*/
+
+
+@media (max-width: 690px)
+{
+/*---header-------------------*/ 
+
+.header-row{
+
+    flex-direction: column;   
+}
+.logo h1{
+
+    font-size: 30px;
+}
+
+
+
+.nav-links {
+
+    position: absolute;
+    background-color: #222;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left:100%;
+    text-align: center;
+    z-index: 1;
+    transition: 1s;
+    overflow: hidden;
+  
+}
+
+.nav-links ul li{
+
+    display: block;
+    padding: 50px 12px 30px;
+}
+
+
+.navigation .fa{
+
+    display: block;
+    color: chocolate;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: left;
+
+}
+
+.navigation .fa-times{
+
+    font-size: 30px;
+    padding: 20px 0 0 20px;
+ 
+ }
+
+.header-row-2{
+
+    margin-top: 80%;
+}
+.header-row-2 h3{
+
+    font-size: 15px;
+ 
+}
+
+.header-row-2 h1{
+
+    font-size: 40px; 
+}
+
+
+.header-row-2 h2{
+
+    font-size: 25px;
+}
+.header-row-2 a{
+
+    font-size: 10px;
+}
+

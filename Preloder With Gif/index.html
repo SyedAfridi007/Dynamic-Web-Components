@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Afridi</title>
+    <link rel="stylesheet" href="style.css">
+
+ 
+
+    <!--------Font Awosome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <!--------Typing Effect CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+
+
+</head>
+<body>
+<!-----------------------------------Preloder---------------------------->
+
+    <div id="preloader"></div>
+
+<!-----------------------------------Slide-Top-Btn---------------------------->
+
+    <a class="slide-top-btn" href="#header"> <i class="fas fa-arrow-up"></i> </a>
+
+
+<!-----------------------------------Header---------------------------->
+<section id="header">
+    
+  <div class="header-container">
+
+    <div class="header-row">
+
+           <div class="navigation">
+
+            <div class="logo" data-aos="slide-down">
+                <h1>Portfol<span>io.</span></h1> 
+           </div>
+
+           <div class="nav-links" id="nl">
+
+               <i class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#service">Service</a> </li>
+                    <li> <a href="#skill">Skill</a> </li>
+                    <li> <a href="#showcase"> Showcase</a></li>
+                    <li> <a href="#contact">Contact</a> </li>
+               </ul>
+
+           </div>
+
+           <i class="fa fa-bars" onclick="ShowMenu()" ></i>
+
+        </div>   
+
+
+        <div class="header-row-2" data-aos="zoom-in">
+            <h3> Hello, my name is</h3>
+            <h1> Syed Afridi</h1>
+            <h2> And im a <span class="typing"></span></h2>
+            <a href="http://">Hire Me</a>
+
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!---------------jQuerry-------------------->
+
+
+<!---------------Typing Animation-------------------->
+<script>
+
+var typed = new Typed(".typing", {
+    strings: ["Web Developer.","UI/UX Designer."," Freelancer.","Entrepreneur."],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+</script>
+
+
+<!---------------Preloader-------------------->
+
+<script>
+
+    var loader=document.getElementById("preloader");
+
+    window.addEventListener("load",function(){
+
+        loader.style.display="none";
+    })
+
+</script>
+
+<!---------------Slide Nav bar-------------------->
+
+<script>
+    var nl=document.getElementById("nl");
+
+    function ShowMenu()
+    {
+        nl.style.left ="0";
+    }
+    function HideMenu()
+    {
+        nl.style.left ="-100%";
+    }
+</script>
