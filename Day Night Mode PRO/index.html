@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-light-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="header-container">
+
+        <div class="header">
+
+            <img src="img/logo.png" class="logo">
+
+            <ul>
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">About</a></li> 
+                <li><a href="http://">Portfolio</a></li>
+                <li><a href="http://">Services</a></li>
+                <li><a href="http://">Hire Me</a></li>
+            </ul>
+
+            <img src="img/moon.png" id="icon" >
+
+        </div>
+
+        <div class="info">
+            <h1> I'm Syed <span>Afridi</span> </h1>
+            <p>This is my official portfolio website to showcase my
+                 all works related to <br> web devlopment and UI design</p>
+
+             <a href="http://">Dawnload CV</a>    
+        </div>
+
+        <div class="social-links">
+            <a href="http://"> <i class="fab fa-facebook"></i></a>
+            <a href="http://"> <i class="fab fa-linkedin-in"></i></a>
+            <a href="http://"> <i class="fab fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var icon= document.getElementById("icon")
+
+        if(localStorage.getItem("theme") == null)
+        {
+            localStorage.setItem("theme", "light");
+
+        }
+
+        let localData = localStorage.getItem("theme");
+
+        if(localData == "light")
+        {
+            icon.src = "img/moon.png";
+            document.body.classList.remove("dark-theme");
+            
+        }
+
+        else if(localData == "dark")
+        {
+            icon.src = "img/sun.png";
+            document.body.classList.add("dark-theme");
+        }
+
+        icon.onclick = function(){
+
+            document.body.classList.toggle("dark-theme")
+
+            if(document.body.classList.contains("dark-theme"))
+            {
+                icon.src = "img/sun.png";
+                localStorage.setItem("theme", "dark");
+
+            }
+
+            else{
+                icon.src = "img/moon.png";
+                localStorage.setItem("theme", "light");
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
