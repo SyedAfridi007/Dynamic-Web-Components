@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.product{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-small-img img{
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 ;
+    cursor: pointer;
+    display: block;
+    border: 1px solid navy;
+    opacity: 0.6;
+}
+
+.product-small-img img:hover{
+
+    opacity: 1;
+}
+
+.img-container img{
+    height: 547px;
+    border: 1px solid navy;
+    margin-left: 10px;
+
+}

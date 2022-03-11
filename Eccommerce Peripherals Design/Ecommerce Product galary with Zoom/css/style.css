@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #e2e2e2;
+}
+.container{
+    width: 940px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rating{
+    margin-top: 20px;
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.description{
+    flex-basis: 50%;
+}
+.description h1{
+    margin: 50px 0 10px 0;
+    font-weight: 300;
+}
+
+.description p{
+    font-size:15px ;
+    width: 80%;
+}
+.description h2{
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 30px;
+    color: #353535;
+}
+.description h2 span{
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    color: #353535;
+    text-decoration: line-through;
+    margin-left: 5px;
+    
+}
+.description button{
+    font-size: 18px;
+    padding: 15px 50px;
+    margin-top: 100px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    color: #fff;
+    box-shadow:0 4px 6px 0 rgba(0,0,0,0.12);
+}
+.description .buy{
+    background-color:#ff9f00 ;
+
+}
+.description .cart{
+    background-color:#fb641b ;
+
+}
+.xzoom-thumbs a{
+    text-decoration: none;
+}
+.xzoom-thumbs img{
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    border: 1px solid #ccc;
+    opacity: 0.6;
+}
+.xzoom-thumbs img:hover{
+    opacity: 1;
+}
+
+.xzoom-preview{
+    border: 2px solid gold;
+   
+}
+
