@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  box-shadow:
+    0 0 48px -4px rgba(0, 0, 0, .25),
+    0 0 0 4px rgba(0, 0, 0, .02);
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-2px);
+  border-left: 4px solid #FFF;
+  height: 24px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, .25);
+}
