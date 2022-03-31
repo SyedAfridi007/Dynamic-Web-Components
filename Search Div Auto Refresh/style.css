@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+input{
+    padding: .5rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid tomato;
+    margin-top: 1rem;
+    color: white;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.555);
+}
+
+#myUl{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+li{
+    list-style: none;
+    width: 270px;
+    height: 220px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
